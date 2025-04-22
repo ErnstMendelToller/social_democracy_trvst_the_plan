@@ -272,6 +272,12 @@ go-to: rm_main
 
 Radbruch has been removed as an advisor. 
 
+@remove_deman
+title: Remove De Man
+view-if: deman_advisor = 1
+tags: remove_advisor
+on-arrival: deman_advisor = 0; n_advisors -= 1
+go-to: rm_main
 
 
 
@@ -637,5 +643,17 @@ go-to: advisor_menu
 tags: nonfactional_advisor
 
 Friedrich Stampfer is now an advisor.
+
+@add_deman
+title: Hendrik de Man
+subtitle: Hendrik de Man is a Belgian social democrat and intellectual, a proponent of the socialist current of "Planisme" {!<br><br>!}[? if difficulty < 0 : Actions - Rallying the Plan der Arbeit, Carrying out the Plan der Arbeit ?]
+is-card: true
+card-image: img/portraits/DeManHendrik.jpg
+tags: nonfactional_advisor
+view-if: deman_advisor = 0 and n_advisors < 3 and plan > 0
+on-arrival: deman_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+
 
 
