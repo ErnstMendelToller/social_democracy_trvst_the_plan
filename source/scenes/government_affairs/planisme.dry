@@ -2,7 +2,7 @@ title: The Plan: An Unexpected Idea
 new-page: true
 is-card: true
 card-image: img/portraits/DeManHendrik.jpg
-view-if: crisis_urgency >= 1 and crisis_program_timer = 0 and economic_plan = 0 and black_thursday_seen == 1 and plan_timer = 1
+view-if: crisis_urgency >= 1 and crisis_program_timer = 5 and economic_plan = 0 and black_thursday_seen == 1 and plan_timer = 1
 on-arrival: shuffle_leadership_timer = 0;
 tags: party_affairs, govt_affairs
 frequency: 400
