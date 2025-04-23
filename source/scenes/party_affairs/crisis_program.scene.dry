@@ -89,6 +89,7 @@ on-arrival: reformist_strength += 10; reformist_dissent -= 10; left_dissent += 8
 With our hard work, we have convinced the majority of the party to adopt the moderate job creation plan! [? if spd_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic or Finance ministries. ?]
 
 @defer
+on-arrival: plan_timer = 1
 
 We hold off on making a decision on economic policy, awaiting more information. Woytinsky and his supporters argue that inaction is a form of action of its own. 
-on-arrival: plan_timer = 1
+
